@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lomitodos - Carta Digital</title>
+
+<title>LOMITODOS RESTOBAR</title>
 
 <style>
 
@@ -14,15 +15,16 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#f5f1ea;
     color:#2c2c2c;
 }
 
 .hero{
-    height:300px;
+    min-height:220px;
+    padding:20px;
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
     url("portada.jpg");
     background-size:cover;
     background-position:center;
@@ -37,12 +39,38 @@ body{
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:32px;
     margin-bottom:10px;
 }
 
 .hero p{
     font-size:18px;
+}
+
+.info{
+    background:#2c2c2c;
+    color:white;
+    text-align:center;
+    padding:15px;
+    line-height:1.6;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.promo{
+    background:#ffecb3;
+    border-left:6px solid #ff9800;
+    padding:20px;
+    margin:20px 0;
+    border-radius:12px;
+}
+
+.promo h2{
+    margin-bottom:10px;
 }
 
 .karaoke{
@@ -56,7 +84,7 @@ body{
 
 .karaoke img{
     width:100%;
-    height:150px;
+    height:180px;
     object-fit:cover;
 }
 
@@ -68,32 +96,13 @@ body{
 .karaoke-info h2{
     color:#b71c1c;
     margin-bottom:10px;
-    font-size:32px;
-}
-
-.karaoke-info p{
-    font-size:18px;
-    color:#555;
 }
 
 .karaoke-hora{
     margin-top:15px;
-    font-size:24px;
-    font-weight:bold;
+    font-size:22px;
     color:#ff9800;
-}
-
-.info{
-    background:#2c2c2c;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
+    font-weight:bold;
 }
 
 details{
@@ -106,7 +115,7 @@ details{
 
 summary{
     padding:18px;
-    font-size:20px;
+    font-size:18px;
     font-weight:bold;
     cursor:pointer;
     background:#5d4037;
@@ -114,39 +123,20 @@ summary{
 }
 
 .producto{
-    display:flex;
-    gap:15px;
-    padding:15px;
+    padding:18px;
     border-bottom:1px solid #eee;
 }
 
-.producto img{
-    width:100px;
-    height:100px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.producto-info{
-    flex:1;
+.producto:last-child{
+    border-bottom:none;
 }
 
 .producto-info h3{
-    margin-bottom:5px;
+    margin-bottom:8px;
 }
 
-.precio{
-    color:#b71c1c;
-    font-weight:bold;
-    font-size:18px;
-}
-
-.promo{
-    background:#ffecb3;
-    border-left:6px solid #ff9800;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
+.producto-info p{
+    line-height:1.6;
 }
 
 footer{
@@ -155,178 +145,307 @@ footer{
     color:#666;
 }
 
+@media(max-width:768px){
+
+.hero h1{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.container{
+    padding:12px;
+}
+
+summary{
+    font-size:17px;
+}
+
+.karaoke-info h2{
+    font-size:24px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
 
 <div class="hero">
     <div class="hero-content">
-        <h1>LOMITODOS-RESTOBAR</h1>
-        <p>LA LOMITERIA DE TODOS</p>
+        <h1>🍔 LOMITODOS RESTOBAR 🍕</h1>
+        <p>La lomitería de todos</p>
     </div>
 </div>
 
 <div class="info">
-    📍 Dirección del local 
-    Itaugua Km 25 - Barrio San Juan 
-    Frente mismo a FERRE-TODOS S.R.L<br>
-    🕒 Martes a Domingo - 18:00 a 00:00
-</div>
-
-<div class="karaoke">
-
-    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200" alt="Gran Karaoke">
-
-    <div class="karaoke-info">
-
-        <h2>🎤 GRAN KARAOKE 🎤</h2>
-
-        <p>
-            Vení a cantar, compartir con amigos y disfrutar de una noche diferente.
-        </p>
-
-        <div class="karaoke-hora">
-            Fin de semana desde las 22:00!
-        </div>
-
-    </div>
-
+📍 Itauguá Km 25 - Barrio San Juan<br>
+Frente a FERRE-TODOS S.R.L.<br>
+🕒 Martes a Domingo - 18:00 a 00:00
 </div>
 
 <div class="container">
 
 <div class="promo">
-    <h2>🔥 PROMOCIÓN IMPERDIBLE!</h2>
-    <p>2 Lomitos + Papas + 2 Bebidas</p>
-    <h3>Gs. 55.000</h3>
+<h2>🍔 LOMITODOS RESTOBAR 🍕</h2>
+
+<p><strong>La lomitería de todos</strong></p>
+
+<br>
+
+<p>
+Bienvenidos a Lomitodos Restobar,
+donde cada hamburguesa, lomito y pizza
+está preparada para compartir buenos momentos
+con amigos y familia.
+</p>
+</div>
+
+</div>
+
+<div class="karaoke">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200">
+
+<div class="karaoke-info">
+
+<h2>🎤 NOCHES DE KARAOKE</h2>
+
+<p>
+Viernes, sábados y domingos
+</p>
+
+<div class="karaoke-hora">
+🕘 Desde las 21:45 hs.
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<details open>
+
+<summary>🍔 HAMBURGUESAS DE TODOS</summary>
+
+<div class="producto">
+<div class="producto-info">
+<h3>👦 Kids de Todos</h3>
+<p>
+Pan<br>
+Carne<br>
+Queso cheddar
+</p>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>🍔 Clásica de Todos</h3>
+<p>
+Pan<br>
+Carne<br>
+Queso cheddar<br>
+Panceta<br>
+Tomate<br>
+Lechuga
+</p>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>👑 La De Todos (Especial de la Casa)</h3>
+<p>
+Pan<br>
+Doble carne<br>
+Salsa especial de la casa<br>
+Queso cheddar<br>
+Panceta<br>
+Tomate
+</p>
+</div>
+</div>
+
+</details>
+
+<details>
+
+<summary>🥩 SÁNDWICHES DE LOMITO</summary>
+
+<div class="producto">
+<div class="producto-info">
+<h3>🥪 Lomito Simple</h3>
+
+<p>
+Pan<br>
+Carne<br>
+Queso mozzarella<br>
+Jamón<br>
+Tomate<br>
+Lechuga
+</p>
+
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>⭐ Lomito Especial</h3>
+
+<p>
+Pan<br>
+Carne<br>
+Queso cheddar<br>
+Queso mozzarella<br>
+Tomate<br>
+Huevo<br>
+Lechuga
+</p>
+
+</div>
+</div>
+
+</details>
+
+<details>
+
+<summary>🍕 PIZZAS DE TODOS</summary>
+
+<div class="producto">
+<div class="producto-info">
+<h3>🧀 Pizza Mozzarella</h3>
+<p>
+Disponible con borde relleno o sin borde relleno.
+</p>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>🍕 Pizza Pepperoni</h3>
+<p>
+Disponible con borde relleno o sin borde relleno.
+</p>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>🐔🥩 Pizza Catupiry Pollo & Carne</h3>
+
+<p>
+Catupiry<br>
+Pollo<br>
+Carne
+</p>
+
+<p>
+Disponible con borde relleno o sin borde relleno.
+</p>
+
+</div>
+</div>
+
+</details>
+
+<details>
+
+<summary>🍟 ACOMPAÑAMIENTOS</summary>
+
+<div class="producto">
+<div class="producto-info">
+<h3>Papas fritas clásicas</h3>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>Papas fritas especiales</h3>
+</div>
+</div>
+
+</details>
+
+<details>
+
+<summary>🥤 BEBIDAS</summary>
+
+<div class="producto">
+<div class="producto-info"><h3>Gaseosas</h3></div>
+</div>
+
+<div class="producto">
+<div class="producto-info"><h3>Agua mineral</h3></div>
+</div>
+
+<div class="producto">
+<div class="producto-info"><h3>Jugos</h3></div>
+</div>
+
+<div class="producto">
+<div class="producto-info"><h3>Cervezas</h3></div>
+</div>
+
+<div class="producto">
+<div class="producto-info"><h3>Chopp</h3></div>
+</div>
+
+</details>
+
+<div class="promo">
+
+<h2>🎉 BENEFICIO DEL CUMPLEAÑERO</h2>
+
+<p>
+Presentando tu cédula el día de tu cumpleaños,
+recibís una cena especial sin costo.
+</p>
+
+<br>
+
+<p><strong>Podés elegir:</strong></p>
+
+<br>
+
+🍔 Hamburguesa Clásica de Todos<br><br>
+
+🥩 Lomito Simple<br><br>
+
+🍕 Pizza Personal Mozzarella
+
+<br><br>
+
+<p>
+Promoción válida únicamente para el cumpleañero.
+</p>
+
 </div>
 
 <div class="promo">
-    <h2>🔥 PROMOCIÓN HOMERO SIMPSON</h2>
-    <p>2 Chopp 2 x 1</p>
-    <h3>Gs. 15.000</h3>
-</div>
 
-<details open>
-<summary>🍔 Hamburguesas</summary>
+<h2>🍺 VIERNES DE CHOPP</h2>
 
-<div class="producto">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500">
-<div class="producto-info">
-<h3>Hamburguesa Clásica</h3>
-<p>Carne, queso, tomate y lechuga.</p>
-<div class="precio">Gs. 25.000</div>
-</div>
-</div>
+<h3>¡2x1 toda la noche!</h3>
 
-<div class="producto">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500">
-<div class="producto-info">
-<h3>Hamburguesa Doble</h3>
-<p>Doble carne y doble queso.</p>
-<div class="precio">Gs. 35.000</div>
 </div>
-</div>
-
-</details>
-
-<details>
-<summary>🥩 Lomitos</summary>
-
-<div class="producto">
-<img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?w=500">
-<div class="producto-info">
-<h3>Lomito Tradicional</h3>
-<div class="precio">Gs. 30.000</div>
-</div>
-</div>
-
-<div class="producto">
-<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500">
-<div class="producto-info">
-<h3>Lomito Especial</h3>
-<div class="precio">Gs. 40.000</div>
-</div>
-</div>
-
-</details>
-
-<details>
-<summary>🌯 Lomito Árabe</summary>
-
-<div class="producto">
-<img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500">
-<div class="producto-info">
-<h3>Lomito Árabe</h3>
-<div class="precio">Gs. 35.000</div>
-</div>
-</div>
-
-</details>
-
-<details>
-<summary>🍕 Pizzas</summary>
-
-<div class="producto">
-<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500">
-<div class="producto-info">
-<h3>Muzzarella</h3>
-<div class="precio">Gs. 55.000</div>
-</div>
-</div>
-
-<div class="producto">
-<img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500">
-<div class="producto-info">
-<h3>Especial</h3>
-<div class="precio">Gs. 70.000</div>
-</div>
-</div>
-
-</details>
-
-<details>
-<summary>🍟 Papas Fritas</summary>
-
-<div class="producto">
-<div class="producto-info">
-<h3>Papas Clásicas</h3>
-<div class="precio">Gs. 15.000</div>
-</div>
-</div>
-
-<div class="producto">
-<div class="producto-info">
-<h3>Papas con Cheddar</h3>
-<div class="precio">Gs. 22.000</div>
-</div>
-</div>
-
-</details>
-
-<details>
-<summary>🥤 Bebidas</summary>
-
-<div class="producto">
-<div class="producto-info">
-<h3>Gaseosa 500ml</h3>
-<div class="precio">Gs. 8.000</div>
-</div>
-</div>
-
-<div class="producto">
-<div class="producto-info">
-<h3>Agua Mineral</h3>
-<div class="precio">Gs. 5.000</div>
-</div>
-</div>
-
-</details>
 
 </div>
 
 <footer>
-LOMITODOS - RESTOBAR • Carta Digital
+
+<h3>🍔 LOMITODOS RESTOBAR 🍕</h3>
+
+<p>La lomitería de todos 🎤🍕🍺</p>
+
+<br>
+
+<p>Comer • Compartir • Cantar</p>
+
 </footer>
 
 </body>
