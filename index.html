@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>LOMITODOS RESTOBAR</title>
 
 <style>
@@ -12,19 +11,21 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,sans-serif;
-    background:#f5f1ea;
-    color:#2c2c2c;
+    font-family:Georgia, serif;
+    background:#1b1612;
+    color:#f5f0e8;
 }
 
+/* PORTADA */
+
 .hero{
-    min-height:350px;
-    padding:25px;
+    height:100vh;
     background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
     url("portada.jpg");
     background-size:cover;
     background-position:center;
@@ -32,188 +33,169 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding:25px;
 }
 
 .hero-content{
     max-width:800px;
 }
 
-.logo-arco{
-    font-size:clamp(32px,6vw,58px);
-    font-weight:900;
-    color:#ffffff; /* o #ffd54f para dorado */
-
-    display:inline-block;
-
-    transform:
-        perspective(700px)
-        rotateX(35deg);
-
-    text-shadow:
-        0 3px 8px rgba(0,0,0,.6);
-
-    letter-spacing:2px;
-    margin-bottom:15px;
-}
-.subtitulo{
-    color:white;
-    font-size:22px;
+.logo{
+    font-size:clamp(2.3rem,8vw,4.8rem);
     font-weight:bold;
-    margin-bottom:15px;
-    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+    color:#d4af37;
+    text-shadow:0 0 15px rgba(0,0,0,.8);
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.logo .linea1{
+    display:block;
+    transform:translateY(8px);
+}
+
+.logo .linea2{
+    display:block;
+    font-size:0.9em;
+}
+
+.slogan{
+    font-size:1.3rem;
+    letter-spacing:2px;
+    margin-bottom:25px;
+    color:#f8e4a0;
 }
 
 .bienvenida{
-    color:white;
-    font-size:16px;
-    line-height:1.7;
-    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+    font-size:1rem;
+    line-height:1.8;
+    max-width:650px;
+    margin:auto;
+    color:#f3f3f3;
 }
 
-@media(max-width:768px){
-
-    .hero{
-        min-height:300px;
-        padding:20px;
-    }
-
-    .subtitulo{
-        font-size:18px;
-    }
-
-    .bienvenida{
-        font-size:14px;
-    }
-
-}
-    
-.hero h1{
-    font-size:32px;
-    margin-bottom:10px;
+.btn-menu{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 35px;
+    text-decoration:none;
+    border:2px solid #d4af37;
+    color:#d4af37;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.hero p{
-    font-size:18px;
+.btn-menu:hover{
+    background:#d4af37;
+    color:#1b1612;
 }
 
-.info{
-    background:#2c2c2c;
-    color:white;
-    text-align:center;
-    padding:15px;
-    line-height:1.6;
+/* MENU */
+
+.menu{
+    background:
+    linear-gradient(
+    rgba(15,15,15,.85),
+    rgba(15,15,15,.85)),
+    url("https://images.unsplash.com/photo-1515443961218-a51367888e4?w=1200");
+    background-size:cover;
+    padding:60px 20px;
 }
 
-.container{
+.section{
     max-width:900px;
     margin:auto;
-    padding:20px;
+    margin-bottom:60px;
 }
 
-.promo{
-    background:#ffecb3;
-    border-left:6px solid #ff9800;
-    padding:20px;
-    margin:20px 0;
-    border-radius:12px;
-}
-
-.promo h2{
-    margin-bottom:10px;
-}
-
-.karaoke{
-    max-width:900px;
-    margin:20px auto;
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.15);
-}
-
-.karaoke img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
-
-.karaoke-info{
-    padding:20px;
+.titulo{
     text-align:center;
+    color:#d4af37;
+    font-size:1.8rem;
+    letter-spacing:3px;
+    margin-bottom:30px;
 }
 
-.karaoke-info h2{
-    color:#b71c1c;
-    margin-bottom:10px;
+.linea{
+    width:120px;
+    height:2px;
+    background:#d4af37;
+    margin:15px auto 35px;
 }
 
-.karaoke-hora{
-    margin-top:15px;
-    font-size:22px;
-    color:#ff9800;
-    font-weight:bold;
+.item{
+    padding:18px 0;
+    border-bottom:1px solid rgba(212,175,55,.25);
 }
 
-details{
-    background:white;
-    margin-bottom:15px;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
-
-summary{
-    padding:18px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    background:#5d4037;
-    color:white;
-}
-
-.producto{
-    padding:18px;
-    border-bottom:1px solid #eee;
-}
-
-.producto:last-child{
+.item:last-child{
     border-bottom:none;
 }
 
-.producto-info h3{
-    margin-bottom:8px;
+.item h3{
+    color:#fff;
+    margin-bottom:10px;
+    font-size:1.15rem;
 }
 
-.producto-info p{
-    line-height:1.6;
+.item p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.card{
+    background:rgba(0,0,0,.45);
+    border:1px solid rgba(212,175,55,.3);
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.card p{
+    text-align:center;
+    line-height:1.8;
 }
 
 footer{
+    background:#111;
     text-align:center;
-    padding:30px;
-    color:#666;
+    padding:40px 20px;
 }
+
+footer h2{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#ccc;
+}
+
+/* CELULAR */
 
 @media(max-width:768px){
 
-.hero h1{
-    font-size:28px;
+.logo{
+    font-size:2.5rem;
 }
 
-.hero p{
-    font-size:16px;
+.slogan{
+    font-size:1rem;
 }
 
-.container{
-    padding:12px;
+.bienvenida{
+    font-size:.95rem;
 }
 
-summary{
-    font-size:17px;
-}
-
-.karaoke-info h2{
-    font-size:24px;
+.titulo{
+    font-size:1.4rem;
 }
 
 }
@@ -223,277 +205,236 @@ summary{
 
 <body>
 
-<div class="hero">
-    <div class="hero-content">
-        <h1>🍔 LOMITODOS RESTOBAR 🍕</h1>
-        <p>La lomitería de todos</p>
-    </div>
+<!-- PORTADA -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1 class="logo">
+<span class="linea1">LOMITODOS</span>
+<span class="linea2">RESTOBAR</span>
+</h1>
+
+<div class="slogan">
+La lomitería de todos
 </div>
 
-<div class="info">
-📍 Itauguá Km 25 - Barrio San Juan<br>
-Frente a FERRE-TODOS S.R.L.<br>
-🕒 Martes a Domingo - 18:00 a 00:00
-</div>
-
-<div class="container">
-
-<div class="promo">
-<h2>🍔 LOMITODOS RESTOBAR 🍕</h2>
-
-<p><strong>La lomitería de todos</strong></p>
-
-<br>
-
-<p>
+<p class="bienvenida">
 Bienvenidos a Lomitodos Restobar,
 donde cada hamburguesa, lomito y pizza
 está preparada para compartir buenos momentos
 con amigos y familia.
 </p>
-</div>
+
+<a href="#menu" class="btn-menu">
+VER MENÚ
+</a>
 
 </div>
 
-<div class="karaoke">
+</section>
 
-<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200">
+<!-- MENU -->
 
-<div class="karaoke-info">
+<section id="menu" class="menu">
 
-<h2>🎤 NOCHES DE KARAOKE</h2>
+<!-- HAMBURGUESAS -->
 
+<div class="section">
+
+<h2 class="titulo">HAMBURGUESAS DE TODOS</h2>
+<div class="linea"></div>
+
+<div class="item">
+<h3>Kids de Todos</h3>
 <p>
-Viernes, sábados y domingos
-</p>
-
-<div class="karaoke-hora">
-🕘 Desde las 21:45 hs.
-</div>
-
-</div>
-
-</div>
-
-<div class="container">
-
-<details open>
-
-<summary>🍔 HAMBURGUESAS DE TODOS</summary>
-
-<div class="producto">
-<div class="producto-info">
-<h3>👦 Kids de Todos</h3>
-<p>
-Pan<br>
-Carne<br>
-Queso cheddar
+Pan • Carne • Queso cheddar
 </p>
 </div>
-</div>
 
-<div class="producto">
-<div class="producto-info">
-<h3>🍔 Clásica de Todos</h3>
+<div class="item">
+<h3>Clásica de Todos</h3>
 <p>
-Pan<br>
-Carne<br>
-Queso cheddar<br>
-Panceta<br>
-Tomate<br>
-Lechuga
+Pan • Carne • Queso cheddar • Panceta • Tomate • Lechuga
 </p>
 </div>
-</div>
 
-<div class="producto">
-<div class="producto-info">
-<h3>👑 La De Todos (Especial de la Casa)</h3>
+<div class="item">
+<h3>La De Todos</h3>
 <p>
-Pan<br>
-Doble carne<br>
-Salsa especial de la casa<br>
-Queso cheddar<br>
-Panceta<br>
-Tomate
+Pan • Doble carne • Salsa especial de la casa • Queso cheddar • Panceta • Tomate
 </p>
 </div>
+
 </div>
 
-</details>
+<!-- LOMITOS -->
 
-<details>
+<div class="section">
 
-<summary>🥩 SÁNDWICHES DE LOMITO</summary>
+<h2 class="titulo">SÁNDWICHES DE LOMITO</h2>
+<div class="linea"></div>
 
-<div class="producto">
-<div class="producto-info">
-<h3>🥪 Lomito Simple</h3>
-
+<div class="item">
+<h3>Lomito Simple</h3>
 <p>
-Pan<br>
-Carne<br>
-Queso mozzarella<br>
-Jamón<br>
-Tomate<br>
-Lechuga
-</p>
-
-</div>
-</div>
-
-<div class="producto">
-<div class="producto-info">
-<h3>⭐ Lomito Especial</h3>
-
-<p>
-Pan<br>
-Carne<br>
-Queso cheddar<br>
-Queso mozzarella<br>
-Tomate<br>
-Huevo<br>
-Lechuga
-</p>
-
-</div>
-</div>
-
-</details>
-
-<details>
-
-<summary>🍕 PIZZAS DE TODOS</summary>
-
-<div class="producto">
-<div class="producto-info">
-<h3>🧀 Pizza Mozzarella</h3>
-<p>
-Disponible con borde relleno o sin borde relleno.
+Pan • Carne • Queso mozzarella • Jamón • Tomate • Lechuga
 </p>
 </div>
-</div>
 
-<div class="producto">
-<div class="producto-info">
-<h3>🍕 Pizza Pepperoni</h3>
+<div class="item">
+<h3>Lomito Especial</h3>
 <p>
-Disponible con borde relleno o sin borde relleno.
+Pan • Carne • Queso cheddar • Queso mozzarella • Tomate • Huevo • Lechuga
 </p>
 </div>
+
 </div>
 
-<div class="producto">
-<div class="producto-info">
-<h3>🐔🥩 Pizza Catupiry Pollo & Carne</h3>
+<!-- PIZZAS -->
 
+<div class="section">
+
+<h2 class="titulo">PIZZAS DE TODOS</h2>
+<div class="linea"></div>
+
+<div class="item">
+<h3>Pizza Mozzarella</h3>
 <p>
-Catupiry<br>
-Pollo<br>
-Carne
+Disponible con borde relleno o sin borde relleno
 </p>
+</div>
 
+<div class="item">
+<h3>Pizza Pepperoni</h3>
 <p>
-Disponible con borde relleno o sin borde relleno.
+Disponible con borde relleno o sin borde relleno
 </p>
-
-</div>
 </div>
 
-</details>
+<div class="item">
+<h3>Pizza Catupiry Pollo & Carne</h3>
+<p>
+Catupiry • Pollo • Carne<br>
+Disponible con borde relleno o sin borde relleno
+</p>
+</div>
 
-<details>
+</div>
 
-<summary>🍟 ACOMPAÑAMIENTOS</summary>
+<!-- ACOMPAÑAMIENTOS -->
 
-<div class="producto">
-<div class="producto-info">
+<div class="section">
+
+<h2 class="titulo">ACOMPAÑAMIENTOS</h2>
+<div class="linea"></div>
+
+<div class="item">
 <h3>Papas fritas clásicas</h3>
 </div>
-</div>
 
-<div class="producto">
-<div class="producto-info">
+<div class="item">
 <h3>Papas fritas especiales</h3>
 </div>
+
 </div>
 
-</details>
+<!-- BEBIDAS -->
 
-<details>
+<div class="section">
 
-<summary>🥤 BEBIDAS</summary>
+<h2 class="titulo">BEBIDAS</h2>
+<div class="linea"></div>
 
-<div class="producto">
-<div class="producto-info"><h3>Gaseosas</h3></div>
+<div class="item">
+<h3>Gaseosas</h3>
 </div>
 
-<div class="producto">
-<div class="producto-info"><h3>Agua mineral</h3></div>
+<div class="item">
+<h3>Agua mineral</h3>
 </div>
 
-<div class="producto">
-<div class="producto-info"><h3>Jugos</h3></div>
+<div class="item">
+<h3>Jugos</h3>
 </div>
 
-<div class="producto">
-<div class="producto-info"><h3>Cervezas</h3></div>
+<div class="item">
+<h3>Cervezas</h3>
 </div>
 
-<div class="producto">
-<div class="producto-info"><h3>Chopp</h3></div>
+<div class="item">
+<h3>Chopp</h3>
 </div>
 
-</details>
+</div>
 
-<div class="promo">
+<!-- BENEFICIOS -->
 
-<h2>🎉 BENEFICIO DEL CUMPLEAÑERO</h2>
+<div class="section">
+
+<div class="card">
+<h3>BENEFICIO DEL CUMPLEAÑERO</h3>
 
 <p>
 Presentando tu cédula el día de tu cumpleaños,
 recibís una cena especial sin costo.
-</p>
+<br><br>
 
-<br>
-
-<p><strong>Podés elegir:</strong></p>
-
-<br>
-
-🍔 Hamburguesa Clásica de Todos<br><br>
-
-🥩 Lomito Simple<br><br>
-
-🍕 Pizza Personal Mozzarella
+Podés elegir:
 
 <br><br>
 
-<p>
+Hamburguesa Clásica de Todos
+<br>
+Lomito Simple
+<br>
+Pizza Personal Mozzarella
+
+<br><br>
+
 Promoción válida únicamente para el cumpleañero.
 </p>
 
 </div>
 
-<div class="promo">
+<div class="card">
+<h3>NOCHES DE KARAOKE</h3>
 
-<h2>🍺 VIERNES DE CHOPP</h2>
+<p>
+Viernes, sábados y domingos
+<br>
+Desde las 21:45 hs.
+</p>
 
-<h3>¡2x1 toda la noche!</h3>
+</div>
+
+<div class="card">
+<h3>VIERNES DE CHOPP</h3>
+
+<p>
+2x1 toda la noche
+</p>
 
 </div>
 
 </div>
+
+</section>
 
 <footer>
 
-<h3>🍔 LOMITODOS RESTOBAR 🍕</h3>
+<h2>LOMITODOS RESTOBAR</h2>
 
-<p>La lomitería de todos 🎤🍕🍺</p>
+<p>
+La lomitería de todos
+</p>
 
 <br>
 
-<p>Comer • Compartir • Cantar</p>
+<p>
+Comer • Compartir • Cantar
+</p>
 
 </footer>
 
