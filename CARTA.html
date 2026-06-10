@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Rincón - Carta Digital</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f1ea;
+    color:#2c2c2c;
+}
+
+.hero{
+    height:300px;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("portada.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.karaoke{
+    max-width:900px;
+    margin:20px auto;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.karaoke img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.karaoke-info{
+    padding:20px;
+    text-align:center;
+}
+
+.karaoke-info h2{
+    color:#b71c1c;
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+.karaoke-info p{
+    font-size:18px;
+    color:#555;
+}
+
+.karaoke-hora{
+    margin-top:15px;
+    font-size:24px;
+    font-weight:bold;
+    color:#ff9800;
+}
+
+.info{
+    background:#2c2c2c;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+details{
+    background:white;
+    margin-bottom:15px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+summary{
+    padding:18px;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#5d4037;
+    color:white;
+}
+
+.producto{
+    display:flex;
+    gap:15px;
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+.producto img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.producto-info{
+    flex:1;
+}
+
+.producto-info h3{
+    margin-bottom:5px;
+}
+
+.precio{
+    color:#b71c1c;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.promo{
+    background:#ffecb3;
+    border-left:6px solid #ff9800;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>LOMITODOS-RESTOBAR</h1>
+        <p>Burger - Lomitos - Pizzas</p>
+    </div>
+</div>
+
+<div class="info">
+    📍 Dirección del local<br>
+	Itaugua Km 25 - Barrio San Juan<br>
+	Frente mismo a FERRE-TODOS S.R.L<br>
+    🕒 Martes a Domingo - 18:00 a 00:00
+</div>
+
+<div class="karaoke">
+
+    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200" alt="Gran Karaoke">
+
+    <div class="karaoke-info">
+
+        <h2>🎤 GRAN KARAOKE 🎤</h2>
+
+        <p>
+            Vení a cantar, compartir con amigos y disfrutar de una noche diferente.
+        </p>
+
+        <div class="karaoke-hora">
+            Fin de semana desde las 22:00!
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+<div class="promo">
+    <h2>🔥 PROMOCIÓN IMPERDIBLE!</h2>
+    <p>2 Lomitos + Papas + 2 Bebidas</p>
+    <h3>Gs. 55.000</h3>
+</div>
+
+<div class="promo">
+    <h2>🔥 PROMOCIÓN HOMERO SIMPSON</h2>
+    <p>2 Chopp 2 x 1</p>
+    <h3>Gs. 15.000</h3>
+</div>
+
+<details open>
+<summary>🍔 Hamburguesas</summary>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500">
+<div class="producto-info">
+<h3>Hamburguesa Clásica</h3>
+<p>Carne, queso, tomate y lechuga.</p>
+<div class="precio">Gs. 25.000</div>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500">
+<div class="producto-info">
+<h3>Hamburguesa Doble</h3>
+<p>Doble carne y doble queso.</p>
+<div class="precio">Gs. 35.000</div>
+</div>
+</div>
+
+</details>
+
+<details>
+<summary>🥩 Lomitos</summary>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?w=500">
+<div class="producto-info">
+<h3>Lomito Tradicional</h3>
+<div class="precio">Gs. 30.000</div>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500">
+<div class="producto-info">
+<h3>Lomito Especial</h3>
+<div class="precio">Gs. 40.000</div>
+</div>
+</div>
+
+</details>
+
+<details>
+<summary>🌯 Lomito Árabe</summary>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500">
+<div class="producto-info">
+<h3>Lomito Árabe</h3>
+<div class="precio">Gs. 35.000</div>
+</div>
+</div>
+
+</details>
+
+<details>
+<summary>🍕 Pizzas</summary>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500">
+<div class="producto-info">
+<h3>Muzzarella</h3>
+<div class="precio">Gs. 55.000</div>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500">
+<div class="producto-info">
+<h3>Especial</h3>
+<div class="precio">Gs. 70.000</div>
+</div>
+</div>
+
+</details>
+
+<details>
+<summary>🍟 Papas Fritas</summary>
+
+<div class="producto">
+<div class="producto-info">
+<h3>Papas Clásicas</h3>
+<div class="precio">Gs. 15.000</div>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>Papas con Cheddar</h3>
+<div class="precio">Gs. 22.000</div>
+</div>
+</div>
+
+</details>
+
+<details>
+<summary>🥤 Bebidas</summary>
+
+<div class="producto">
+<div class="producto-info">
+<h3>Gaseosa 500ml</h3>
+<div class="precio">Gs. 8.000</div>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>Agua Mineral</h3>
+<div class="precio">Gs. 5.000</div>
+</div>
+</div>
+
+</details>
+
+</div>
+
+<footer>
+LOMITODOS - RESTOBAR • Carta Digital
+</footer>
+
+</body>
+</html>
