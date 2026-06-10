@@ -21,8 +21,8 @@ body{
 }
 
 .hero{
-    min-height:220px;
-    padding:20px;
+    min-height:350px;
+    padding:25px;
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
     url("portada.jpg");
@@ -35,9 +35,58 @@ body{
 }
 
 .hero-content{
-    color:white;
+    max-width:800px;
 }
 
+.logo-arco{
+    font-size:clamp(32px,6vw,58px);
+    font-weight:900;
+    color:#ffffff; /* o #ffd54f para dorado */
+
+    display:inline-block;
+
+    transform:
+        perspective(700px)
+        rotateX(35deg);
+
+    text-shadow:
+        0 3px 8px rgba(0,0,0,.6);
+
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+.subtitulo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:15px;
+    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+}
+
+.bienvenida{
+    color:white;
+    font-size:16px;
+    line-height:1.7;
+    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+}
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:300px;
+        padding:20px;
+    }
+
+    .subtitulo{
+        font-size:18px;
+    }
+
+    .bienvenida{
+        font-size:14px;
+    }
+
+}
+    
 .hero h1{
     font-size:32px;
     margin-bottom:10px;
